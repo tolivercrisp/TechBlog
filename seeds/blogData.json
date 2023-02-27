@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Node.JS is backed by Google",
+    "content": "Being sponsored by the Google V8 engine is itself the biggest selling point for Node.js to full-stack development services. The Node.js debugging feature is present in Chrome 57+ by default, which can be used to eliminate both front-end and back-end errors. While JavaScript operates in the front end through Node.js, it is supported by Google V8 chrome in the back end.",
+    "user_id": 1
+  },
+  {
+    "title": "MVC Origins",
+    "content": "The Model-View-Controller (MVC) design pattern was first introduced in the 1970s by Trygve Reenskaug, a Norwegian computer scientist, while he was working on Smalltalk-80 at Xerox Parc.",
+    "user_id": 2
+  }
+]

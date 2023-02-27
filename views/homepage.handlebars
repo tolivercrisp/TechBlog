@@ -1,0 +1,28 @@
+<div class="container">
+  <h1 class="text-center">Welcome to The Tech Blog</h1>
+  <p class="text-center">Stay updated with the latest tech news and insights</p>
+  {{#if req.session.logged_in}}
+    <h3>Want to make a post?</h3>
+    <form class="post-form" action="/post" method="post">
+    <div class="pcontainer" id="postForm">
+      <input type="text" id="postTitle" placeholder="Enter post title" />
+      <textarea id="postContent" placeholder="Enter post content"></textarea>
+      <button id="submitPostBtn">Submit</button>
+    </div>
+    </form>
+  {{/if}}
+
+
+      {{#each posts}}
+        <div class="posts">
+        <h3 class="posts-title">{{this.title}}</h3>
+        <p>{{this.content}}</p>
+        </div>
+      {{/each}}
+    
+
+</div>
+{{#if req.session.logged_in}}
+
+  <script src="/js/post.js"></script>
+{{/if}}
