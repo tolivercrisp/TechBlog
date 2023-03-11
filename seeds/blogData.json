@@ -1,12 +1,12 @@
 [
   {
-    "title": "Node.JS is backed by Google",
-    "content": "Being sponsored by the Google V8 engine is itself the biggest selling point for Node.js to full-stack development services. The Node.js debugging feature is present in Chrome 57+ by default, which can be used to eliminate both front-end and back-end errors. While JavaScript operates in the front end through Node.js, it is supported by Google V8 chrome in the back end.",
+    "title": "The Future of AI: 5 Key Trends to Watch in 2023",
+    "content": "As we move into 2023, the field of artificial intelligence is rapidly evolving, with new breakthroughs and innovations constantly emerging. From the rise of explainable AI to the increasing integration of AI into healthcare, here are five key trends to watch in the coming year.",
     "user_id": 1
   },
   {
-    "title": "MVC Origins",
-    "content": "The Model-View-Controller (MVC) design pattern was first introduced in the 1970s by Trygve Reenskaug, a Norwegian computer scientist, while he was working on Smalltalk-80 at Xerox Parc.",
+    "title": "The Top 3 Cybersecurity Threats Facing Businesses",
+    "content": "With the increasing reliance on technology and remote work, cybersecurity has become a top concern for businesses. In 2023, businesses must be vigilant against the rise of ransomware attacks, social engineering attacks, and supply chain attacks in order to protect their sensitive information and assets.",
     "user_id": 2
   }
 ]

@@ -1,6 +1,8 @@
+// JS code for the LOGIN process
 const loginFormHandler = async (event) => {
     event.preventDefault();
-  
+
+    // grab user input
     const username = document.querySelector("#name-login").value.trim();
     const password = document.querySelector("#password-login").value.trim();
   
@@ -11,6 +13,7 @@ const loginFormHandler = async (event) => {
         headers: { "Content-Type": "application/json" },
       });
   
+      // if inputs are valid, take user to homepage
       if (response.ok) {
         document.location.replace("/homepage");
       } else {

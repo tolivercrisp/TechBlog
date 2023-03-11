@@ -1,8 +1,8 @@
 module.exports = {
+
+  // just a pretty basic date format function
     format_date: (date) => {
-      // Format date as MM/DD/YYYY
       if (date){
-        // return date.toLocaleDateString();
         return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
       } else {
         return 'error'

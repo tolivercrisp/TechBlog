@@ -1,5 +1,5 @@
 [
-  { "content": "This is an amazing post!", "user_id": 2, "blog_post_id": 1 },
-  { "content": "I completely agree!", "user_id": 3, "blog_post_id": 1 },
-  { "content": "I loved this post!", "user_id": 3, "blog_post_id": 2 }
+  { "content": "That's a strong opinion!", "user_id": 2, "blog_post_id": 1 },
+  { "content": "I hate you! Your opinion is bad.", "user_id": 3, "blog_post_id": 1 },
+  { "content": "You're so smart, I love you!", "user_id": 3, "blog_post_id": 2 }
 ]
