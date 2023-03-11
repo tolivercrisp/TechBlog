@@ -39,7 +39,7 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`
   ==============================
-  "Online at ${PORT}, Server is."  
+  "Online, Server is."  
               __.-._                   
               '-._"7'  
                /'.-c          
