@@ -22,12 +22,12 @@
     "devDependencies": {},
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/iskry/TechBlog.git"
+      "url": "git+https://github.com/tolivercrisp/TechBlog.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/iskry/TechBlog/issues"
+      "url": "https://github.com/tolivercrisp/TechBlog/issues"
     },
-    "homepage": "https://github.com/iskry/TechBlog#readme"
+    "homepage": "https://github.com/tolivercrisp/TechBlog#readme"
   }
