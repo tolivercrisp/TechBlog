@@ -1,29 +1,23 @@
-// importing the express router, which allows for the creation of modular, mountable route handlers
+// Import Express and other models
 const router = require("express").Router();
 const bodyParser = require("body-parser");
-const {User, BlogPost} = require("../models");
+const {User, Post} = require("../models");
 router.use(bodyParser.json());
 
-
-
-
-
-
-// create a GET endpoint for the root route ('/login')
+// GET (/login)
 router.get("/login", (req, res) => {
   res.render("login", { req });
 });
 
-// create a GET endpoint for the root route ('/signup')
+// GET (/signup)
 router.get("/signup", (req, res) => {
   res.render("signup", { req });
 });
 
-// create a GET endpoint for the root route ('/')
+// GET (/)
 router.get("/", async (req, res) => {
-
   try {
-    const dbPostData = await BlogPost.findAll({
+    const dbPostData = await Post.findAll({
       attributes: ["id", "title", "content"],
     });
     const posts = dbPostData.map((post) => post.get({ plain: true }));
@@ -36,10 +30,9 @@ router.get("/", async (req, res) => {
 });
 
 
-// create a catch-all GET endpoint for any other route
+// GET (anything else, like bad requests, etc.)
 router.get("*", (req, res) => {
   res.redirect("/");
 });
 
-// export the router
 module.exports = router;
