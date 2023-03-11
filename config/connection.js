@@ -1,8 +1,7 @@
 const Sequelize = require("sequelize");
 require('dotenv').config();
 
-// create connection to the db. Connect to JWASDB instance if env var provided.
-// (Heroku creates this variable when you provision a JAWSDB instance.)
+// DB connection (extra JAWSDB for Heroku)
 let sequelize;
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
