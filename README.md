@@ -8,8 +8,6 @@ Writing about tech can be just as important as making it. Developers spend plent
 
 My task this week was to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
-![Screenshot](./assets//buzzbytes_readme.jpg)
-
 ## Table of Contents
   - [Installation](#installation)
   - [License](#license)
