@@ -1,6 +1,6 @@
 # Toliver's Tech Blog!
 
-![Screenshot](./assets//techblog-pic.jpg)
+![Screenshot](./assets/techblog-pic.jpg)
 
 ## Description
 
