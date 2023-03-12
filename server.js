@@ -9,6 +9,9 @@ const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const app = express();
+
+// added this host variable for Heroku (cannot use 'localhost')
+const host = '0.0.0.0';
 const PORT = process.env.PORT || 3001;
 
 const hbs = exphbs.create({ helpers });
@@ -37,9 +40,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log(`
+  app.listen(PORT, host () => console.log(`
   ==============================
-  "Online, Server is."  
+  "Online at ${ PORT } Server is."  
               __.-._                   
               '-._"7'  
                /'.-c          
