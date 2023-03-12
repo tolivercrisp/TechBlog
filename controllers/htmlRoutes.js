@@ -1,7 +1,7 @@
 // Import Express and other models
 const router = require("express").Router();
 const bodyParser = require("body-parser");
-const {User, Post} = require("../models");
+const {User, BlogPost} = require("../models");
 router.use(bodyParser.json());
 
 // GET (/login)
@@ -17,7 +17,7 @@ router.get("/signup", (req, res) => {
 // GET (/)
 router.get("/", async (req, res) => {
   try {
-    const dbPostData = await Post.findAll({
+    const dbPostData = await BlogPost.findAll({
       attributes: ["id", "title", "content"],
     });
     const posts = dbPostData.map((post) => post.get({ plain: true }));
